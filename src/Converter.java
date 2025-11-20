@@ -2,23 +2,23 @@ import java.util.Scanner;
 
 public class Converter {
     public static double celsiusToFahrenheit(double c) {
-        return (c * 9.0 / 5.0) + 32;
+        return (c * 9 / 5) + 32;
     }
 
     public static double fahrenheitToCelsius(double f) {
-        return (f - 32) * 5.0 / 9.0;
+        return (f - 32) * 5 / 9;
     }
 
     public static double metersToKilometers(double m) {
-        return m / 1000.0;
+        return m / 1000;
     }
 
     public static double kilogramsToGrams(double kg) {
-        return kg * 1000.0;
+        return kg * 1000;
     }
 
     public static double gramsToKilograms(double g) {
-        return g / 1000.0;
+        return g / 1000;
     }
 
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class Converter {
             System.out.println("0. Выход");
             System.out.print("Выберите операцию: ");
 
-            String choice = scanner.nextLine();
+            String choice = null;
 
             if (choice.equals("0")) {
                 System.out.println("Выход из программы.");
@@ -68,7 +68,5 @@ public class Converter {
                 System.out.println("Ошибка: нужно ввести число.");
             }
         }
-
-        scanner.close();
     }
 }
